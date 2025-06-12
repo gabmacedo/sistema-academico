@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: #1F1F21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    transition: background-color 0.3s ease;
+}
+
+.navigation-bar {
+    position: fixed;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    top: 0;
+    width: 100%;
+    padding: 15px;
+    background: #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.navigation-bar i {
+    font-size: 22px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    height: 600px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.task-card {
+    width: 250px;
+    height: 250px;
+    background: #fff;
+    box-shadow: 5px 5px 15px #bebebe31, -5px -5px 15px #ffffff31;
+    border-radius: 32px;
+    cursor: pointer;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: background 0.3s ease;
+}
+
+.task-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.task-desc {
+    margin-bottom: 10px;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.fa-regular.fa-circle {
+    font-size: 18px;
+    transition: all .3s ease;
+}
+
+.fa-regular.fa-circle-check {
+    font-size: 18px;
+    transition: all .3s ease;
+}
+
+
+.task-check {
+    opacity: 0;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+.check i:hover + .task-check {
+    opacity: 1;
+}
+
+/* Checked */
+
+.task-card.checked {
+    background: #89ea97;
+    box-shadow: 5px 5px 15px #1d1d1d31, -5px -5px 15px #34343431;
+    transition: background 0.3s ease;
+    color: #5e5e5e;
+}
+
+.task-card.checked .task-title {
+    text-decoration: line-through;
+}
+.task-card.checked .task-desc {
+    text-decoration: line-through;
+}
+
+/* Dark Mode */
+
+body.dark {
+    background: #e0e0e0;
+    transition: background-color 0.3s ease;
+}
+
+.navigation-bar.dark {
+    background: #1F1F21;
+}
+
+.navigation-bar i.dark {
+    color: white;
+}
+
+.task-card.dark {
+    box-shadow: 10px 10px 30px #00000031, -10px -10px 30px #4d4d4d31;
+}
+
+/* Reponsividade */
+
+@media(max-width: 768px) {
+    .container {
+        width: 100%;
+        min-height: 600px;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+
+    }
+
+    .task-card {
+        min-width: 250px ;
+        width: auto;
+        height: auto;
+        
+}
+
+
+}

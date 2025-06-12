@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: #1F1F21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s ease;
+}
+
+.navigation-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px;
+    background: #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.navigation-bar i {
+    font-size: 22px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.welcome-nav {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.bold-name {
+    font-weight: bold;
+}
+
+.container {
+    height: 70%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.cards {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.card {
+    width: 300px;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    border-radius: 32px;
+    background: linear-gradient(145deg, #ffffff, #dcdcdc);
+    box-shadow: 10px 10px 30px #bebebe31, -10px -10px 30px #ffffff31;
+    transition: all 0.3s ease;
+    padding: 20px;
+}
+
+.card.calculadora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card.tarefas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card.bloqueado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover {
+    background: #dbdbdb;
+    scale: 110%;
+    border: 5px solid #007aff;
+    box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.3);
+}
+
+.icon-svg {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease;
+    margin-bottom: 5px;
+}
+
+.icon-svg.task {
+    height: 90px;
+    width: 90px;
+}
+
+.card-titulo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.card-descricao {
+    font-size: 14px;
+    color: #4a4a4a;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.4s ease;
+    text-align: center;
+    max-width: 200px;
+    position: absolute;
+}
+
+.card:hover .icon-svg {
+    transform: scale(1.1);
+}
+
+.card:hover .card-descricao {
+    opacity: 1;
+    transform: translateY(78px);
+}
+
+/* Light Mode */
+body.dark {
+    background: #e0e0e0;
+    transition: background-color 0.3s ease;
+}
+
+.navigation-bar.dark {
+    background: #1F1F21;
+}
+
+.navigation-bar i.dark {
+    color: white;
+}
+
+.card.dark {
+    box-shadow: 10px 10px 30px #00000031, -10px -10px 30px #4d4d4d31;
+}
+
+.welcome-nav.dark {
+    color: white;
+}
+
+/* responsividade */
+
+@media(max-width: 768px) {
+    .container {
+        width: 100%;
+        min-height: 600px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .cards {
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+}
+
+    .card {
+        width: 170px;
+        height: 170px;
+    }
+
+    .card:hover .card-descricao {
+        opacity: 0;
+    }
+
+
+}

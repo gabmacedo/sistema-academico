@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/hub.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studenty | Hub </title>
+</head>
+<body class="body">
+    <nav class="navigation-bar">
+        <i class="fa-solid fa-power-off"></i>
+        <h1 class="welcome-nav">Seja bem vindo, <span id="nome-aluno" class="bold-name"> </span>.</h1>
+        <i class="fa-solid fa-moon" id="icon-lua"></i>
+    </nav>
+    <div class="container">
+        <div class="cards">
+
+            <div class="card calculadora">
+                <img src="./assets/imgs/calculator.svg" alt="Ícone Calculadora" class="icon-svg calc" />
+                <span class="card-titulo">Notas</span>
+                <p class="card-descricao">Calcule sua média de forma rápida.</p>
+            </div>
+
+            <div class="card tarefas">
+                <img src="./assets/imgs/task.svg" alt="Icone tarefas" class="icon-svg task">
+                <span class="card-titulo">Tarefas</span>
+                <p class="card-descricao">Veja e organize suas tarefas.</p>
+            </div>
+            <div class="card bloqueado">
+                <img src="./assets/imgs/blocked.svg" alt="Icone bloqueado" class="icon-svg">
+                <span class="card-titulo">Em Breve...</span>
+                <p class="card-descricao">Em breve mais funcionalidades.</p>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/hub.js"></script>
+    <script src="./assets/js/switchmode.js"></script>
+    <script type="text/javascript" src="./assets/js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+	VanillaTilt.init(document.querySelectorAll(".card"), {
+		max: 25,
+		speed: 400
+	});
+    </script>
+</body>
+</html>

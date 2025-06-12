@@ -1,5 +1,6 @@
 const loginsAlunos = [
-    {nome: 'gabriel', ra: '2401541'}
+    {nome: 'gabriel', ra: '2401541'},
+    {nome: 'leandro', ra: '2302060'}
 ]
 
 const btn = document.querySelector('#btn')

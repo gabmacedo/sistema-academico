@@ -1,3 +1,8 @@
+const logado = localStorage.getItem('logado')
+if (logado !== 'true') {
+    window.location.href = 'index.html'
+} 
+
 const btn = document.querySelector('#btn')
 const resultado = document.querySelector('.resultado')
 const mediaApInput = document.querySelector('#media-ap')

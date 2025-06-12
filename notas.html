@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/login.css">
-    <title>Studenty | Login</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Studenty | Calculadora de notas </title>
 </head>
 <body class="body">
     <nav class="navigation-bar">
-        <i class="fa-solid fa-arrow-left" id="arrow"></i>
+        <i class="fa-solid fa-arrow-left" id="arrow" onclick="window.location.href='hub.html'"></i>
         <i class="fa-solid fa-moon" id="icon-lua"></i>
     </nav>
     <div class="container">
@@ -18,20 +18,20 @@
             <span class="btn yellow"></span>
             <span class="btn green"></span>
         </div>
-        <span class="title">Login</span>
+        <span class="title">Calculadora de notas</span>
         <div class="container-inputs">
-            <label for="aluno-ra">RA</label>
-            <input type="text" id="aluno-ra" class="input" placeholder="Digite seu RA">
-            <p class="login-error"></p>
+            <label for="media-ap">Média das APs</label>
+            <input type="text" id="media-ap" placeholder="Digite a média das APs">
+            <p class="nota-error"></p>
 
-            <label for="aluno-nome">Nome</label>
-            <input type="text" id="aluno-nome" class="input" placeholder="Digite seu nome">
-            <p class="login-error"></p>
-
-            <button id="btn">Entrar</button>
+            <label for="nota-pai">Nota PAI</label>
+            <input type="text" id="nota-pai" placeholder="Digite a nota da PAI">
+            <p class="nota-error"></p>
         </div>
+        <button id="btn">Calcular</button>
+        <p class="resultado"></p>
     </div>
-    <script src="./assets/js/validacao.js"></script>
+    <script src="./assets/js/script.js"></script>
     <script src="./assets/js/switchmode.js"></script>
 </body>
 </html>

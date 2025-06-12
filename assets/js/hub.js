@@ -1,6 +1,6 @@
 const logado = localStorage.getItem('logado')
 if (logado !== 'true') {
-    window.location.href = 'login.html'
+    window.location.href = 'index.html'
 } 
 
 const nomeAluno = sessionStorage.getItem('alunoNome')
@@ -14,14 +14,14 @@ const logoutButton = document.querySelector('.fa-power-off')
 logoutButton.addEventListener('click', () => {
     setTimeout(() => {
         localStorage.removeItem('logado')
-        window.location.href = 'login.html'
+        window.location.href = 'index.html'
     }, 1000)
 })
 
 const cardCalculadora = document.querySelector('.calculadora')
 cardCalculadora.addEventListener('click', () => {
     setTimeout(() => {
-        window.location.href = 'index.html'
+        window.location.href = 'notas.html'
     }, 500)
 })
 

@@ -10,7 +10,7 @@ Este projeto pessoal consiste em um **Sistema Acadêmico**, com funcionalidades 
   - Cálculo da nota necessaria para aprovação baseado nas médias informadas.
 - Gerenciador de Tarefas:
   - Lista de tarefas com opção de marcar como concluídas (cada usuário mantém seu próprio estado de conclusão).
-- Modo Dark/Light::
+- Modo Dark/Light:
   - Alternância entre tema claro e escuro, com persistência da escolha.
 
 ---

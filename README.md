@@ -5,13 +5,13 @@ Este projeto pessoal consiste em um **Sistema Acadêmico**, com funcionalidades 
 ## 🚀 Funcionalidades
 
 - Login de Alunos:
--- Acesso controlado com nome e RA previamente cadastrados.
+  - Acesso controlado com nome e RA previamente cadastrados.
 - Calculadora de Notas:
--- Cálculo da nota necessaria para aprovação baseado nas médias informadas.
+  - Cálculo da nota necessaria para aprovação baseado nas médias informadas.
 - Gerenciador de Tarefas:
--- Lista de tarefas com opção de marcar como concluídas (cada usuário mantém seu próprio estado de conclusão).
-- Modo Dark/Light::
--- Alternância entre tema claro e escuro, com persistência da escolha.
+  - Lista de tarefas com opção de marcar como concluídas (cada usuário mantém seu próprio estado de conclusão).
+- Modo Dark/Light:
+  - Alternância entre tema claro e escuro, com persistência da escolha.
 
 ---
 
@@ -50,4 +50,4 @@ Obs: Como o login exige dados previamente cadastrados, é necessário adicionar 
 
 ## 👨‍💻 Autor
 
--Gabriel Aparecido de Macedo
+- Gabriel Aparecido de Macedo

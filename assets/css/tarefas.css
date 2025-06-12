@@ -145,11 +145,10 @@ body.dark {
     }
 
     .task-card {
-        min-width: 250px ;
+        min-width: 400px ;
         width: auto;
         height: auto;
         
 }
-
 
 }
